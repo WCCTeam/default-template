@@ -1,0 +1,46 @@
+{
+  "overrides": [
+    {
+      "files": "*.js",
+      "options": {
+        "singleQuote": true,
+        "printWidth": 80,
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": true,
+        "TrailingCooma": "all",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "arrowParens": "always"
+      }
+    },
+    {
+      "files": "*.vue",
+      "options": {
+        "singleQuote": true,
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": true,
+        "TrailingCooma": "all"
+      }
+    },
+    {
+      "files": "*.html",
+      "options": {
+        "tabWidth": 4
+      }
+    },
+    {
+      "files": "*.shtml",
+      "options": {
+        "tabWidth": 4
+      }
+    },
+    {
+      "files": "*.scss",
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
+}
