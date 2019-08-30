@@ -3,6 +3,10 @@
         {
             "tplName": "yhkd-oneScreen-ver",
             "cn": "【yhkd】一屏竖版"
+        },
+        {
+            "tplName": "yhkd-oneScreen-hor",
+            "cn": "【yhkd】一屏横版"
         }
     ]
 }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="Description"
+        content="欢迎来到英魂之刃，与过亿热血玩家一起，加入到这款最公平的多人在线竞技手游中来！游戏保留了高低地、迷雾、传送、装备主动技能等MOBA经典设定。5v5对战尽享畅快竞技，让你成为下一个王者；乱斗模式带来更多MOBA乐趣；全新冒险模式，给你不一样的荣耀体验；每一种玩法都能带来脑力与手速碰撞以及组队决战PK的无穷乐趣。">
+    <meta name="Keywords"
+        content="英魂之刃，英魂之刃官方网站，英魂之刃官网，英魂之刃口袋，英魂之刃口袋版，英魂之刃手游，英魂之刃手机版，DOTA手游，英魂，英魂之刃口袋版下载，英魂之刃体验服，英魂之刃礼包，英魂之刃口袋版攻略，自由之战2，王者荣耀，光影对决，无尽争霸，龙骑士，英魂赛事，周免，英魂之刃攻略，英魂之刃手游攻略，MOBA，即开即打，dota手游，英雄出装，5v5,10v10，RPG,PVE，兑换码，礼包码，中国风，魔幻，黄金十二宫，兑换码，天赋宝石，LOL手游，竞技游戏，LOL手机版，李小龙的一字马正版授权">
+    <meta name="viewport" content="minimal-ui, target-densitydpi=device-dpi,width=1334, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes"/>
+    <meta name="browsermode" content="application"/>
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="x5-page-mode" content="app"/>
+    <meta name="author" content="{{name}}({{employee}}) | {{time}}">
+    <title>标题</title>
+    <script src="https://yhkd.99.com/m/script/public.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <style id="ratioCss"></style>
+</head>
+<body>
+    <script>
+        //不支持meta缩放的，会自动采用zoom缩放
+        function zoomHtml(width) {
+            document.querySelector('meta[name="viewport"]').content = 'minimal-ui,target-densitydpi=device-dpi, width=' + width + ', user-scalable=0';
+        }
+        //需要一屏内的模块，采用zoom缩放
+        function zoom(width, height) {
+            var ratio;//缩放比例
+            var docEl = document.documentElement;
+            var clientWidth = docEl.clientWidth;
+            var clientHeight = docEl.clientHeight;
+            if (clientWidth / clientHeight > width / height) {
+                ratio = clientHeight / height;
+            } else {
+                ratio = clientWidth / width;
+            }
+            if (clientWidth > clientHeight) {
+                document.getElementById("ratioCss").innerHTML = ".con{transform: translate(-50%,-50%) scale(" + ratio + ")  !important; height:" + clientHeight / ratio + "px !important;width:" + clientWidth / ratio + "px !important }"
+            }
+        }
+        //控制viewport的值，避免ios旋转放大bug
+        window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
+            setTimeout(function() {
+                document.querySelector('meta[name="viewport"]').content = ''
+            }, 200);
+            setTimeout(function() {
+                zoomHtml(1334);
+                zoom(1220, 600);
+            }, 200)
+        }, false);
+        //解决关闭/开启屏幕 页面放大bug
+        window.addEventListener("webkitvisibilitychange", function() {
+            zoomHtml(1334);
+            zoom(1220, 600);
+        }, false);
+        zoom(1220, 600);
+    </script>
+    <!--tip-->
+    <div class="tip hide"><p>为了更好的体验，请将手机/平板横过来！</p></div>
+    <!--/tip-->
+    <!--main-->
+    <div class="main">
+        <!--logo-->
+        <h1 class="logo">
+            <script>setLogo(true, 1);</script>
+        </h1>
+        <!--/logo-->
+        <!--con-->
+        <div class="con">
+            <div class="box">
+                <!--安全区域内容-->
+                <!--居于顶部的使用top定位，居于底部的使用bottom定位，居中的使用绝对居中+margin-bottom来调整y轴的位置-->
+            </div>
+        </div>
+        <!--/con-->
+    </div>
+    <!--/main-->
+    <!--stats-code-->
+    <script type="text/javascript">tongji();</script>
+    <!--/stats-code-->
+    <script type="text/javascript" src="https://yhkd.99.com/script/plugin/zepto/zepto.min.js"></script>
+    <!--魔窗需调用-->
+    <!--<script src="https://hefx.99.com/deeplink/mlinkjs"></script>-->
+    <script src="js/main.js"></script>
+    <script>
+        demo.init();
+    </script>
+</body>
+</html>

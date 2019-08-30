@@ -1,7 +1,7 @@
 var demo = (function() {
-    var $tip = $('.tip');
+    var $tip = $(".tip");
     var init = function() {
-            tipFn('horizontal');
+            tipFn('vertical');
         },
         //魔窗判断
         mLinkFn = function() {
@@ -12,8 +12,8 @@ var demo = (function() {
             deepLink.init(['downloadBtn1', 'downloadBtn2'], '', '');
         },
         /*
-         * 下载按钮布点监控
-         **/
+        * 下载按钮布点监控
+        **/
         trackDownloadFn = function($id, des, event, sec1, sec2, sec3, sec4) {
             if (ua.weChat) {
                 $id.on('touchend', function() {
@@ -36,34 +36,18 @@ var demo = (function() {
             }
         },
         /*
-         * 普通按钮布点监控
-         **/
+        * 普通按钮布点监控
+        **/
         trackSecFn = function($id, des, event, sec) {
-            $id.on('touchend', function() {
+            $id.on("touchend", function() {
                 _hmt.push(['_trackEvent', des, event, sec]);
             });
         },
         //百度布点监控调用
         trackEventFn = function() {
-            trackDownloadFn(
-                $('.btn-1'),
-                'XXX页面-XX下载按钮',
-                '点击',
-                '下载按钮(iOS-微信)',
-                '下载按钮(Android-微信)',
-                '下载按钮(Android)',
-                '下载按钮(iOS)'
-            );
-            trackDownloadFn(
-                $('.btn-2'),
-                'XXX页面-XX下载按钮',
-                '点击',
-                '下载按钮(iOS-微信)',
-                '下载按钮(Android-微信)',
-                '下载按钮(Android)',
-                '下载按钮(iOS)'
-            );
-            trackSecFn($('.btn-3'), 'XXX页面-XX按钮', '点击', 'XX按钮');
+            trackDownloadFn($(".btn-1"), 'XXX页面-XX下载按钮', '点击', '下载按钮(iOS-微信)', '下载按钮(Android-微信)', '下载按钮(Android)', '下载按钮(iOS)');
+            trackDownloadFn($(".btn-2"), 'XXX页面-XX下载按钮', '点击', '下载按钮(iOS-微信)', '下载按钮(Android-微信)', '下载按钮(Android)', '下载按钮(iOS)');
+            trackSecFn($(".btn-3"), 'XXX页面-XX按钮', '点击', 'XX按钮');
         },
         /*手机横竖屏提示
          *@direction：横屏提示or竖屏提示 'horizontal'|'vertical'
@@ -75,33 +59,25 @@ var demo = (function() {
             var orientationChange = function() {
                 if (isAndroid) {
                     if (window.screen.width < window.screen.height) {
-                        direction == 'horizontal'
-                            ? $tip.addClass('hide')
-                            : $tip.removeClass('hide');
+                        direction == 'horizontal' ? $tip.addClass("hide") : $tip.removeClass("hide");
                     }
                     if (window.screen.width > window.screen.height) {
-                        direction == 'horizontal'
-                            ? $tip.removeClass('hide')
-                            : $tip.addClass('hide');
+                        direction == 'horizontal' ? $tip.removeClass("hide") : $tip.addClass("hide");
                     }
                 } else if (isIOS) {
                     if (window.orientation == 90 || window.orientation == -90) {
                         //横屏
-                        direction == 'horizontal'
-                            ? $tip.removeClass('hide')
-                            : $tip.addClass('hide');
+                        direction == 'horizontal' ? $tip.removeClass("hide") : $tip.addClass("hide");
                     } else {
                         //竖屏
-                        direction == 'horizontal'
-                            ? $tip.addClass('hide')
-                            : $tip.removeClass('hide');
+                        direction == 'horizontal' ? $tip.addClass("hide") : $tip.removeClass("hide");
                     }
                 }
             };
-            window.addEventListener('resize', orientationChange, false);
+            window.addEventListener("resize", orientationChange, false);
             orientationChange();
         };
     return {
         init: init
-    };
+    }
 })();

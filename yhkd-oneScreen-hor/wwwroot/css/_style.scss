@@ -1,0 +1,118 @@
+/*********** common ***********/
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+.ab-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.ab-center-x {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.ab-center-y {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.hide {
+    display: none !important;
+}
+
+.hide-normal {
+    display: none;
+}
+
+body {
+    max-width: 750px;
+    min-height: 100%;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+/***********tip***********/
+.tip {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 44px;
+    color: #fff;
+    background: #000;
+    z-index: 9997;
+    p {
+        @extend .ab-center;
+        width: 100%;
+    }
+}
+
+//带侧边栏
+/*.con {
+    @extend .ab-center;
+    width: 2224px;
+    height: 1200px;
+    background: url("../images/bg.jpg") no-repeat center center;
+}
+
+.box {
+    position: relative;
+    left: 71px; //tab栏的一半宽度
+    width: 1000px; // 安全区域宽度扣掉左侧边栏的宽度，再预留一点空隙
+    height: 100%;
+    margin: 0 auto;
+}*/
+
+//不带侧边栏
+.con {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -webkit-transform-origin: center;
+    background: url("../images/bg-sub.jpg") no-repeat center center;
+}
+
+.box {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    margin: 0 auto;
+}
