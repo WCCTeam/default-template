@@ -7,6 +7,18 @@
         {
             "tplName": "yhkd-oneScreen-hor",
             "cn": "【yhkd】一屏横版"
+        },
+        {
+            "tplName": "yhkd-mobile",
+            "cn": "【yhkd】手机端通用"
+        },
+        {
+            "tplName": "yhkd-pc",
+            "cn": "【yhkd】PC通用"
+        },
+        {
+            "tplName": "yhkd-share",
+            "cn": "【yhkd】游戏客户端分享领奖+视频点击统计调用"
         }
     ]
 }

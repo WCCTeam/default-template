@@ -1,0 +1,21 @@
+@keyframes share {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -2880px;
+    }
+
+}
+
+@-webkit-keyframes share {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -2880px;
+    }
+
+}
