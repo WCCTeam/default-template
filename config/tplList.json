@@ -19,6 +19,98 @@
         {
             "tplName": "yhkd-share",
             "cn": "【yhkd】游戏客户端分享领奖+视频点击统计调用"
+        },
+        {
+            "tplName": "g2-404",
+            "cn": "【G2】空站点提示页面.shtml"
+        },
+        {
+            "tplName": "g2-mobile-px",
+            "cn": "【G2】手机端px切法"
+        },
+        {
+            "tplName": "g2-mobile-px-zoom",
+            "cn": "【G2】手机端px-zoom切法"
+        },
+        {
+            "tplName": "g2-mobile-rem",
+            "cn": "【G2】手机端rem切法"
+        },
+        {
+            "tplName": "g2-pc-webname",
+            "cn": "【G2】pc端切割文件模板"
+        },
+        {
+            "tplName": "lol-slg-english-mobile",
+            "cn": "【英魂SLG】【英语】手机端通用"
+        },
+        {
+            "tplName": "lol-slg-english-pc",
+            "cn": "【英魂SLG】【英语】PC端通用"
+        },
+        {
+            "tplName": "lol-slg-vietnam-mobile",
+            "cn": "【英魂SLG】【越南语】手机端通用"
+        },
+        {
+            "tplName": "lol-slg-vietnam-pc",
+            "cn": "【英魂SLG】【越南语】PC端通用"
+        },
+        {
+            "tplName": "my-activity",
+            "cn": "【魔域】活动模板"
+        },
+        {
+            "tplName": "my-cms",
+            "cn": "【魔域】cms模板"
+        },
+        {
+            "tplName": "mykd-cms",
+            "cn": "【魔域口袋】cms模板"
+        },
+        {
+            "tplName": "mykd-pc-cms",
+            "cn": "【魔域口袋】pc-cms模板"
+        },
+        {
+            "tplName": "mykd-pc-svn",
+            "cn": "【魔域口袋】pc-svn模板"
+        },
+        {
+            "tplName": "mykd-svn",
+            "cn": "【魔域口袋】svn模板"
+        },
+        {
+            "tplName": "newcos-yhzr-mobile",
+            "cn": "【英魂之刃】手机端通用"
+        },
+        {
+            "tplName": "newcos-yhzr-pc",
+            "cn": "【英魂之刃】PC端通用"
+        },
+        {
+            "tplName": "newcos-yhzr-pc-tencent",
+            "cn": "【英魂之刃】PC端to腾讯"
+        },
+        {
+            "tplName": "yhzr-slg-chinese-mobile",
+            "cn": "【英魂SLG】【中文】手机端通用"
+        },
+        {
+            "tplName": "yhzr-slg-chinese-pc",
+            "cn": "【英魂SLG】【中文】PC端通用"
+        },
+        {
+            "tplName": "zf-cms-pc",
+            "cn": "【征服】cms活动"
+        },
+        {
+            "tplName": "zf-phone",
+            "cn": "【征服】phone活动"
+        },
+        {
+            "tplName": "zf-svn",
+            "cn": "【征服】svn活动"
         }
     ]
 }

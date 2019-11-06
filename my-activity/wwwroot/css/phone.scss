@@ -1,0 +1,44 @@
+@import "reset";
+@import "mixin";
+* {
+    zoom: 1.000001;
+    -webkit-transform: translateZ(0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+a {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+body {
+    width: 100%;
+    background: #682436;
+    color: #d7b1bb;
+    font: 28px "Lucida Grande", Helvetica, Arial, Verdana, "Microsoft YaHei", sans-serif;
+    line-height: 1.5;
+}
+/*header*/
+.header {
+    position: relative;
+    height: 444px;
+    background: url(../img/p-header.jpg) no-repeat;
+    h2 {
+        display: none;
+    }
+}
+.logo {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 97px;
+    img {
+        width: 100%;
+    }
+}
+/*main*/
+.main {
+    position: relative;
+    height: 943px;
+    padding: 0 20px;
+    background: url(../img/p-main.jpg) no-repeat;
+}
+@import "pop";

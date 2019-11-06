@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <!--<meta name="viewport" content="minimal-ui,target-densitydpi=device-dpi, width=750, user-scalable=0"/>-->
+    <!--<meta name="viewport" content="minimal-ui,target-densitydpi=device-dpi, width=device-width, user-scalable=0"/>-->
+    <meta content="minimal-ui,width=750, user-scalable=no" name="viewport" id="viewport">
+    <style id="ratioCss"></style>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes"/>
+    <meta name="browsermode" content="application"/>
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="x5-page-mode" content="app"/>
+    <!--<script src="https://m.zf.99.com/script/public.js"></script>-->
+    <script src="https://zf.99.com/script/public.js" charset="gbk"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <title>征服自助领奖专区（手机版）一《征服》新征服 新征程——重构一个有代入感的世界-永久免费-zf.99.com</title>
+    <meta name="keywords"
+          content="征服,征服官网,纵横四海、勇士、铁扇江山、铁扇门、战神崛起、狂战士、功夫之王,不服来战,网络游戏,免费网络游戏,天晴数码娱乐,斗神,截拳师,忍者,勇士,弓手,海盗,火道士,水道士,武僧,战士,家族,骑乘,帮派,PK"/>
+    <meta name="description" content="《征服》最新资料片“纵横四海”燃情公测！和最初的人，一起征服！点击进入官网,华为P30 Pro、精美周边、超值礼包等您来拿！"/>
+    <meta name="author" content="{{name}}({{employee}}) | {{time}}">
+    <link rel="shortcut icon" href="https://img7.99.com/zf/images/1124/index/favicon.ico">
+    <script>
+        var zoomUA = navigator.userAgent.toLowerCase();
+        var zoomHeight = 0;
+        function zoom(width, height) {
+            var ratio;//缩放比例
+            var docEl = document.documentElement;
+            var clientWidth = docEl.clientWidth;
+            if(zoomUA.match(/android/i) || zoomUA.match(/oppo/i)){
+                zoomHeight = docEl.clientHeight - window.innerHeight;
+            }
+            var clientHeight = docEl.clientHeight - zoomHeight*window.devicePixelRatio;
+            var ratioClient = clientWidth / clientHeight;
+            var ratioObj = width / height;
+            if (ratioObj >= ratioClient) {
+                ratio = clientWidth / width;
+            } else {
+                ratio = clientHeight / height;
+            }
+            document.getElementById("ratioCss").innerHTML = ".main{-webkit-transform: translate(-50%,-50%) scale(" + ratio +"); margin-top:-"+ zoomHeight +"px}"
+        }
+        function zoomHtml(width) {
+            document.querySelector('meta[name="viewport"]').content = 'minimal-ui,width='+width+', user-scalable=0';
+        }
+        //控制viewport的值，避免ios旋转放大bug
+        window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize",function(){
+            setTimeout(function(){
+                document.querySelector('meta[name="viewport"]').content = ''
+            }, 200);
+            setTimeout(function(){
+                zoomHtml(750);
+                zoom(650,1200);
+            },310);
+        },false);
+        //解决关闭/开启屏幕 页面放大bug
+        window.addEventListener("webkitvisibilitychange",function(){
+            zoomHtml(750);
+            zoom(650,1200);
+        },false);
+        zoom(650,1200);
+        window.onpageshow = function(evt){
+            if( (zoomUA.match(/android/i) || zoomUA.match(/oppo/i)) && !zoomUA.match(/MicroMessenger/i)){
+                setTimeout(function(){
+                    zoom(650,1200);
+                },200);
+            }else{
+                zoom(650,1200);
+            }
+        };
+    </script>
+</head>
+<body ontouchstart="">
+<div class="portrait" id="portrait">
+    <p>为了更好的体验，请将手机方向转至竖屏哦~</p>
+</div>
+
+<div class="box" id="all">
+    <div class="main">
+        <!--头图-->
+        <div class="m-top">
+            <a class="go-home" href="http://m.zf.99.com" title="">返回首页</a>
+
+            <a class="djdl" href="javascript:;" title=""></a>
+            <a class="jhlj" href="javascript:;" title=""></a>
+
+        </div>
+        <!--/头图-->
+
+
+    </div>
+
+
+</div>
+<!--注册弹窗-->
+<div class="pop " id="">
+    <div class="l-tc">
+        <a class="close" href="javascript:;" title=""></a>
+        <h3>帐号注册</h3>
+        <div class="reg-mod">
+            <ul>
+                <li class="zc-li1">
+                    <strong>
+                        <input type="text" placeholder="通行证账号">
+                    </strong>
+                </li>
+                <li class="zc-li2">
+                    <strong>
+                        <input type="text" placeholder="密码">
+                    </strong>
+                </li>
+                <li class="zc-li9">
+                    <strong>
+                        <input type="text" placeholder="验证码">
+                    </strong>
+                </li>
+            </ul>
+            <div class="btn-div">
+                <a class="tc-btn" href="javascript:;">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--tongji-->
+<div style="display:none">
+    <script>pings();</script>
+</div>
+<!--<script type="text/javascript" src="https://m.zf.99.com/script/jquery-1.10.1.min.js"></script>-->
+<script type="text/javascript" src="https://zf.99.com/script/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+    func.init();
+</script>
+</body>
+</html>

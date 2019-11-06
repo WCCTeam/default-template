@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--对应活动修改活动标题-->
+<title>活动标题<!--#include virtual="/include/title.shtml"--></title>
+<!--#include virtual="/include/seo.shtml"-->
+<meta name="author" content="{{name}}({{employee}}) | {{time}}">
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<script type="text/javascript" src="https://news.99.com/script/g_topmenu.js" charset="GBK"></script>
+<script type="text/javascript" src="https://mykd.99.com/script/public.js?v=1"></script>
+<script type="text/javascript">
+//设置跳转移动端
+jumpUrl(链接地址);
+</script>
+</head>
+
+<body>
+<!--统一顶部调用--> 
+<script type="text/javascript">topMenu();</script> 
+<!--/统一顶部调用-->
+<h1>抢福利 上线就够了</h1>
+<div id="logo_bg"></div>
+<script type="text/javascript">setLogo();</script>
+             
+<div class="footer"><script type="text/javascript">publicBottom(site.mykd,900, "_blank")</script> </div>
+<!--统计代码-->
+<div style="display:none">
+    <script type="text/javascript">pings();</script>
+</div>
+</body>
+</html>

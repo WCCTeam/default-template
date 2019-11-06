@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>xxx-首页</title>
+<!--#include virtual="include/_meta.shtml" -->
+<meta name="author" content="{{name}}({{employee}}) | {{time}}">
+</head>
+<body>
+  hello world！
+</body>
+</html>

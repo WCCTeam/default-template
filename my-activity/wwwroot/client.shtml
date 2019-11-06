@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title>表白季-魔域中文官方网站-my.99.com</title>
+<!--#include virtual="_meta.shtml"-->
+<link rel="stylesheet" href="https://my.99.com/script/plugin/swiper/2/idangerous.swiper.css">
+<link rel="stylesheet" href="css/client.css">
+</head>
+<body scroll="no">
+<div class="wrapper">
+    <div class="client-wrapper">
+        <div class="header">
+            <h2>表白季</h2>
+        </div>
+        <div class="main"></div>
+    </div>
+</div>
+<script src="https://my.99.com/script/jquery.js"></script>
+<script src="https://my.99.com/script/plugin/swiper/2/idangerous.swiper.min.js"></script>
+<script src="https://my.99.com/script/jquery.fancybox.pack.js"></script>
+<script src="js/function.js"></script>
+<!--统计代码-->
+<div style="display:none">
+    <script>
+        myPublic.addEventTongji();
+        myPublic.addClientTongji();
+    </script>
+</div>
+</body>
+</html>

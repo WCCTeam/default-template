@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta name="viewport" content="minimal-ui,width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,target-densitydpi=320">
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="HandheldFriendly" content="true">  
+<!-- UC默认竖屏 ，UC强制全屏 -->
+<meta name="full-screen" content="yes"/>
+<meta name="browsermode" content="application"/>
+<!-- QQ强制竖屏 QQ强制全屏 -->
+<meta name="x5-orientation" content="portrait"/>
+<meta name="x5-fullscreen" content="true"/>
+<meta name="x5-page-mode" content="app"/>
+<script src="/js/zoom.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>

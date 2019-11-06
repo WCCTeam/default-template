@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>»áÔ±×ðÏí°ü-<!--#include virtual="/include/title.shtml" --></title>
+<!--#include virtual="/include/head.shtml" -->
+<meta name="author" content="{{name}}({{employee}}) | {{time}}">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="http://my.99.com/script/jquery.js"></script>
+<!--Í³¼Æ´úÂë-->
+<div style="display:none">
+    <script>
+        /*¹ÙÍøµÄÍ³¼Æ´úÂë*/
+        myPublic.addTongji();
+        /*»î¶¯Õ¾µÄÍ³¼Æ´úÂë£¬Ò»°ã»î¶¯¶¼ÓÃÕâ¸ö*/
+        myPublic.addEventTongji();
+        /*ÄÚÇ¶Ò³Í³¼Æ´úÂë*/
+        myPublic.addClientTongji();
+    </script>
+</div>
+</body>
+</html>

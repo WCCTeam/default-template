@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="gb2312">
+    <meta name="robots" content="all">
+    <meta name="candy" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="">
+    <meta name="Keywords" content="��Ѷ��Ϸ">
+    <title>����- Ӣ��֮�� - ��Ѷ��Ϸ</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <meta name="author" content="{{name}}({{employee}}) | {{time}}">
+</head>
+<body>
+    <!--logo-->
+    <h1 class="logo">
+        <a href="https://cos.qq.com" target="_blank">
+            <img src="images/logo.png" alt="">
+        </a>
+    </h1>
+    <!--/logo-->
+    <script type="text/javascript" src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.7.2.min.js"></script>
+    <!--ͳ�ƴ���-->
+    <script src="http://ossweb-img.qq.com/images/js/foot.js"></script>
+    <script src="http://ossweb-img.qq.com/images/js/title.js"></script>
+    <script type="text/javascript" src="http://pingjs.qq.com/tcss.ping.js"></script>
+    <!--/ͳ�ƴ���-->
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--对应活动修改活动标题-->
+<title>活动标题-魔域口袋版“神域争霸”火爆公测-魔域官方正版手游-魔域口袋版官方网站</title>
+<meta name="Keywords" content="魔域,魔域手游,魔域手游官网,魔域口袋版,手机魔域,魔域官网,魔域口袋版官网,魔域手机版,魔域成神,魔域神界,口袋魔域,魔域口袋版礼包,魔域互通版,魔域手机游戏,魔域官方手游,幻兽,PK,战斗力,魔域什么职业好,9星副本,九星副本,魔域亡灵法师,魔域龙骑,魔域血族,魔域狂战士,魔域口袋版下载,魔域口袋通,幻兽觉醒,兽王将军,精灵游侠,魔域弓箭手,魔域3D,魔域3D官网,魔域3D手游" />
+<meta name="Description" content="魔域2019全新资料片“众神之巅”版本现正火爆公测中，全民成神，全新玩法等你来战！《魔域口袋版》是国民级热血PK魔域3D手游，由《魔域》原班人马革新打造，邀请你一起体验百人同屏拼杀，开红乱战爽快感！十年经典重铸，掀起风暴 魔域3D手游邀你重返亚特大陆！" />
+<meta name="viewport" content="minimal-ui,target-densitydpi=device-dpi, width=750, user-scalable=0"/>
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="author" content="{{name}}({{employee}}) | {{time}}">
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<link rel="apple-touch-icon-precomposed" sizes="114*114" href="https://zydown.99.com/gw/mykd/icon/logo-bg.png">
+<script type="text/javascript" src="https://m.mykd.99.com/script/public.js?v=1"></script>
+<script>
+function zoomHtml(width) {
+    document.querySelector('meta[name="viewport"]').content = 'minimal-ui,target-densitydpi=device-dpi, width='+width+', user-scalable=0';
+}
+//控制viewport的值，避免ios旋转放大bug
+window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize",function(){
+    setTimeout(function(){
+        document.querySelector('meta[name="viewport"]').content = ''
+    }, 200);
+    setTimeout(function(){
+        zoomHtml(750);
+    },200);
+},false);
+//解决关闭/开启屏幕 页面放大bug
+window.addEventListener("webkitvisibilitychange",function(){
+        zoomHtml(750);
+},false);
+</script>
+</head>
+
+<body>
+<!--统计代码-->
+<div style="display:none">
+    <script>pings();pingsAct();</script>
+</div>
+</body>
+</html>

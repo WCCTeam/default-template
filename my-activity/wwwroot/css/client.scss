@@ -1,0 +1,38 @@
+@import "reset";
+@import "mixin";
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+    color: #f5a4b9;
+    font: 16px/1.5 "Microsoft Yahei";
+}
+body,html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.wrapper, .client-wrapper {
+    position: relative;
+    width: 900px;
+    height: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.client-wrapper {
+    background:url(../img/c-bg.jpg) no-repeat;
+}
+/*header*/
+.header {
+    position: relative;
+    height: 170px;
+    h2 {
+        display: none;
+    }
+}
+/*main*/
+.main {
+    position: relative;
+    height: 470px;
+}
+@import "pop";

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title>表白季-魔域中文官方网站-my.99.com</title>
+<!--#include virtual="_meta.shtml"-->
+<link rel="stylesheet" href="https://my.99.com/script/plugin/swiper/2/idangerous.swiper.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" charset="utf8" src="https://hd.my.99.com/gwdh/view/js/public_top.js"></script>
+</head>
+<body>
+<script>topMenu();</script>
+<div class="full-bg">
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="logo" id="logo">
+                <a href="https://my.99.com/index/" title="魔域中文官方网站">
+                    <img src="https://img4.99.com/my/images/logo/logo.png" alt="魔域中文官方网站"></a>
+                <script>setLogo();</script>
+            </h1>
+            <h2>表白季</h2>
+        </div>
+        <div class="main-01"></div>
+        <div class="main-02"></div>
+        <div class="footer">
+            <script>publicBottom(site.my, 900, "_blank")</script>
+        </div>
+    </div>
+</div>
+<!--横竖屏提示-->
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer-content"><i class="icon mod-orient-layer-icon-orient"></i>
+        <div class="mod-orient-layer-desc">为了更好的体验，请使用横屏浏览</div>
+    </div>
+</div>
+<!--/横竖屏提示-->
+<!--#include virtual="pop.shtml"-->
+<script src="https://my.99.com/script/jquery.js"></script>
+<script src="https://my.99.com/script/plugin/swiper/2/idangerous.swiper.min.js"></script>
+<script src="js/function.js"></script>
+<!--统计代码-->
+<div style="display:none">
+    <script>
+        myPublic.addEventTongji();
+    </script>
+</div>
+</body>
+</html>

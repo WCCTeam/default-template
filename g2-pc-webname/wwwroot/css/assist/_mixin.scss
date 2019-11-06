@@ -1,0 +1,95 @@
+/*==== font ====*/
+@mixin font($size: 14, $color: #333,$weight:normal, $family: ''){
+  @if $family != '' {
+    font-family: $family;
+  }
+  font-size: $size + px;
+  color: $color;
+  font-weight: $weight;
+}
+/*==== bg ====*/
+@mixin bg($url,$x,$y,$repeat:no-repeat){
+  background: url($url) $repeat $x+px $y+px;
+}
+
+@mixin ell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@mixin wb {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+/*==== opacity ====*/
+@mixin opacity($num){
+  opacity: $num / 100;
+  filter:alpha(opacity=$num);
+}
+/*==== placeholder ====*/
+@mixin placeholder($fontSize, $color) {
+    :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        font-family: 'microsoft yahei';
+        color: $color;
+        font-size: $fontSize + px;
+    }
+
+    ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        font-family: 'microsoft yahei';
+        color: $color;
+        font-size: $fontSize + px;
+    }
+
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {
+        font-family: 'microsoft yahei';
+        color: $color !important;
+        font-size: $fontSize + px;
+    }
+
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+        font-family: 'microsoft yahei';
+        color: $color !important;
+        font-size: $fontSize + px;
+    }
+
+    .placeholder {
+        font-family: 'microsoft yahei';
+        color: $color !important;
+        font-size: $fontSize + px;
+    }
+}
+// block得有宽度margin左右为auto才能居中
+@mixin center-block ($extend:true) {
+  @if $extend {
+    @extend %center-block;
+  } @else {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+%center-block{
+  @include center-block(false);
+}
+/*==== responsive ====*/
+$breakpoints: (
+        'to1400': 'only screen and ( max-width: 1620px)'
+) !default;
+@mixin respond-to($breakpoint) {
+  $query: map-get($breakpoints, $breakpoint);
+
+  @if not $query {
+    @error 'No value found for `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.';
+  }
+
+  @media #{if(type-of($query) == 'string', unquote($query), inspect($query))} {
+    @content;
+  }
+}
+/*==== 自定义的函数 ====*/
+// @function myLength($n,$m,$l) {
+//   @return (($n/$m)*$l) + px;
+// }

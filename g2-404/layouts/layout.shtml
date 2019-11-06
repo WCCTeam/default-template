@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--#include virtual="include/_meta.shtml" -->
+<title>站点提示</title>
+<style>
+    .building-tip-wrap{
+        padding-top: 180px;
+    }
+    .building-img{
+        display: block;
+        margin: 0 auto;
+        width: 1000px;
+    }
+    .building-tip{
+        font-size: 28px;
+        font-weight: 700;
+        color: #666;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="building-tip-wrap">
+    <img class="building-img" src="http://image.101.com/baby/img/building.jpg" alt="">
+    <h3 class="building-tip">哦噢，站点正在建设中...</h3>
+</div>
+    
+</body>
+</html>

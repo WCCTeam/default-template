@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="Description" content="This is multi-player online sand-table strategy game with western magic background. Players form their own legions and troops mainly through constructing cities, developing army and government, recruiting heroes and conscripting troops to enhance their battle power, attack cities and seize territories on the huge world map, and battle with other players." />
+    <meta name="Keywords" content="Lord(s)、Rise、 King(s)、War、Order、slg" />
+    <meta name="viewport" content="minimal-ui,target-densitydpi=device-dpi, width=750, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes" />
+    <meta name="browsermode" content="application" />
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="x5-page-mode" content="app" />
+    <meta name="author" content="{{name}}({{employee}}) | {{time}}">
+    <title>标题</title>
+    <script src="https://lol.99.com/script/public.js"></script>
+    <link rel="shortcut icon" href="https://images.99.com/lol/image/favicon.ico" />
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--tip-->
+    <div class="tip hide">
+        <p>为了更好的体验，请将手机方向锁定解锁，并旋转至竖屏</p>
+    </div>
+    <!--/tip-->
+    <!--logo-->
+    <h1 class="logo">
+        <script>setLogo(false);</script>
+    </h1>
+    <!--/logo-->
+    <!--stats-code-->
+    <script type="text/javascript">tongji();</script>
+    <!--/stats-code-->
+    <script type="text/javascript" src="https://lol.99.com/script/plugin/zepto/zepto.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        demo.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+/***********************reset***********************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*750为psd宽度，根据实际需求调整*/
+  --width: 750;
+  --ratio: calc(var(--wWidth) / var(--width));
+}
+
+body {
+  font: 28px "Lucida Grande", Helvetica, Arial, Verdana, "Microsoft YaHei", sans-serif;
+  color: #5f300d;
+  line-height: 1.5;
+}
+
+/*一屏之内使用注释的样式*/
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0)
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer, article, section, nav, menu, hgroup {
+  display: block;
+  clear: all;
+}
+
+html {
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  -ms-text-size-adjust: auto;
+  -webkit-text-size-adjust: auto;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+  background-color: #383d46;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  outline: 0;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #5a5a5a;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #5a5a5a;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #5a5a5a;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none outside none;
+}
+
+i, em {
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+html * {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hide {
+  display: none !important;
+  opacity: 0 !important;
+}
+.box {
+  width: calc(var(--width) * 1px);
+  height: calc(var(--wHeight) / var(--ratio) * 1px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: scale(var(--ratio));
+  transform-origin: 0 0;
+  overflow: hidden;
+}
+.main {
+  .m-top {
+    background: url("../img/top-bg.jpg");
+    height: 436px;
+    position: relative;
+    .go-home {
+      position: absolute;
+      background: url("../img/btn2.png");
+      width: 132px;
+      height: 48px;
+      top: 17px;
+      right: 25px;
+      color: #ffffff;
+      font-size: 24px;
+      text-align: center;
+      line-height: 48px;
+    }
+    .djdl{
+      position: absolute;
+      background: url("../img/djdl.png");
+      width: 192px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      top: 225px;
+      right: 190px;
+      color: #ffffff;
+      font-size: 24px;
+    }
+    .jhlj{
+      position: absolute;
+      background: url("../img/jhlj.png");
+      width: 192px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      top: 321px;
+      right: 190px;
+      color: #ffffff;
+      font-size: 24px;
+    }
+  }
+
+}
+
+.show {
+  display: block !important;
+  z-index: 9999999 !important;
+}
+/*弹窗样式*/
+.pop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.l-tc {
+  -webkit-transform: translate(-50%, -50%) scale(var(--ratio));
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+/*以下样式可实现弹窗是延展布局*/
+/* .pop-b{width: calc(var(--width) * 1px);height: calc(var(--wHeight) / var(--ratio)  * 1px);}
+.pop-txt{position: absolute;left: 10px; right: 10px;top: 10px;bottom: 10px; background: #fff} */
+
+@media screen and (orientation: portrait) {
+  /*竖屏 css*/
+  .portrait {
+    display: none;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  /*横屏 css*/
+  .portrait {
+    display: block;
+  }
+}
+
+@media screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+@media screen and (max-device-height: 500px) {
+
+}
+
+@import "animation";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

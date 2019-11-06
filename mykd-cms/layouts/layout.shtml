@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--对应活动修改活动标题-->
+<title>活动标题<!--#include virtual="/include/title.shtml"--></title>
+<!--#include virtual="/include/seo.shtml"-->
+<meta name="viewport" content="minimal-ui,target-densitydpi=device-dpi, width=750, user-scalable=0"/>
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="author" content="{{name}}({{employee}}) | {{time}}">
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<link rel="apple-touch-icon-precomposed" sizes="114*114" href="https://zydown.99.com/gw/mykd/icon/logo-bg.png">
+<script type="text/javascript" src="https://m.mykd.99.com/script/public.js?v=1"></script>
+<script>
+function zoomHtml(width) {
+    document.querySelector('meta[name="viewport"]').content = 'minimal-ui,target-densitydpi=device-dpi, width='+width+', user-scalable=0';
+}
+//控制viewport的值，避免ios旋转放大bug
+window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize",function(){
+    setTimeout(function(){
+        document.querySelector('meta[name="viewport"]').content = ''
+    }, 200);
+    setTimeout(function(){
+        zoomHtml(750);
+    },200);
+},false);
+//解决关闭/开启屏幕 页面放大bug
+window.addEventListener("webkitvisibilitychange",function(){
+        zoomHtml(750);
+},false);
+</script>
+</head>
+
+<body>
+<div class="tip">为了更好的体验，建议竖屏观看！</div>
+<script>
+ //判断手机横竖屏状态：
+window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
+        if (window.orientation === 180 || window.orientation === 0) { 
+            document.querySelector(".tip").style.display = "none";
+        } 
+        if (window.orientation === 90 || window.orientation === -90 ){ 
+            document.querySelector(".tip").style.display = "block";
+        }  
+    }, false); 
+</script>
+<!--统计代码-->
+<div style="display:none">
+    <script>pings();</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/**
+ * rem基本设置
+ * @author xxx (工号)
+ * @date    yyyy-mm-dd hh:mm:ss
+ * @version $Id$
+ * @editor xxx (工号)
+ */
+
+/* psd的宽度除以10，必须最先设置 */
+$psdWidth:75;
+
+/* flexible 布局方案，rem计算 */
+@function rem($n) {
+	@return ($n/$psdWidth) + rem;
+}
+
+/* 简单基础设置 */
+body{font-family: 'Microsoft YaHei','SimHei','Helvetica Neue',Helvetica,sans-serif,Helvetica,sans-serif;color:#000; background-color:#fff;}
+.clearfix:after{ content:""; height:0; visibility:hidden; display:block; clear:both;}
+.clearfix{ zoom:1;}
+.absolute{
+  position: absolute;
+}
+.relative{
+  position:relative;
+}
+html,body{
+	height: 100%;
+}

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/**
+ * index.css
+ * @author xxx (工号)
+ * @date    yyyy-mm-dd hh:mm:ss
+ * @version $Id$
+ * @editor xxx (工号)
+ */
+ 
+*{
+	zoom: 0.999999999;
+	text-size-adjust:auto !important;
+	-webkit-text-size-adjust:auto !important;
+ 	box-sizing:border-box;
+}
+//请开始你的样式~
+body{
+ 	background: #fdd;
+}
+.test{
+	font-size: 30px;
+}

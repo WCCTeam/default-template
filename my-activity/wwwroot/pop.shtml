@@ -1,0 +1,102 @@
+<!-- pop: login-->
+<div class="pop-box">
+    <div class="mask"></div>
+    <div class="pop">
+        <div class="pop-t">
+            <a href="javascript:;" class="pop-close" title="关闭">X</a>
+            <div class="pop-title">
+                <h3>重新登录</h3>
+            </div>
+        </div>
+        <div class="pop-m">
+            <div class="pop-cont">
+                <ul class="contact clearfix">
+                    <li>
+                        <label for="">版本：</label>
+                        <span>
+                                <select name="" id="">
+                                    <option value="">版本</option>
+                                </select>
+                            </span>
+                    </li>
+                    <li>
+                        <label for="">大区：</label>
+                        <span>
+                                <select name="" id="">
+                                    <option value="">大区</option>
+                                </select>
+                            </span>
+                    </li>
+                    <li>
+                        <label for="">服务器：</label>
+                        <span>
+                                <select name="" id="">
+                                    <option value="">服务器</option>
+                                </select>
+                            </span>
+                    </li>
+                    <li class="v-code">
+                        <label for="">验证码：</label>
+                        <span>
+                                <input type="text" />
+                            </span>
+                        <!-- <img src="images/v-code.jpg" alt="">--></li>
+                </ul>
+            </div>
+            <div class="tac">
+                <a href="javascript:;" class="pop-btn" title="登录">登录</a>
+                <a href="javascript:;" class="pop-btn pop-btn-cancel" title="取消">取消</a>
+            </div>
+        </div>
+        <div class="pop-b"></div>
+    </div>
+</div>
+<!--/pop: login-->
+<!-- pop: server-->
+<div class="pop-box">
+    <div class="mask"></div>
+    <div class="pop">
+        <div class="pop-t">
+            <a href="javascript:;" class="pop-close" title="关闭">X</a>
+            <div class="pop-title">
+                <h3>区服登录记录</h3>
+            </div>
+        </div>
+        <div class="pop-m">
+            <div class="pop-cont">
+                <p class="tac">xxxxxxxxxx大区</p>
+                <p class="tac">xxxxxxxxxx大区</p>
+            </div>
+            <div class="tac">
+                <a href="javascript:;" class="pop-btn" title="快速登录">快速登录</a>
+                <a href="javascript:;" class="pop-btn" title="选择其他区服">选择其他区服</a>
+            </div>
+        </div>
+        <div class="pop-b"></div>
+    </div>
+</div>
+<!-- pop: server-->
+<!-- pop: 通用-->
+<div class="pop-box">
+    <div class="mask"></div>
+    <div class="pop">
+        <div class="pop-t">
+            <a href="javascript:;" class="pop-close" title="关闭">X</a>
+            <div class="pop-title">
+                <h3>区服登录记录</h3>
+            </div>
+        </div>
+        <div class="pop-m">
+            <div class="pop-cont">
+                <p>
+                    通用弹窗！通用弹窗！通用弹窗！通用弹窗！通用弹窗！通用弹窗！通用弹窗！通用弹窗！通用弹窗！通用弹窗！通用弹窗！ <strong>通用弹窗！通用弹窗！</strong>
+                </p>
+            </div>
+            <div class="tac">
+                <a href="javascript:;" class="pop-btn" title="确定">确定</a>
+            </div>
+        </div>
+        <div class="pop-b"></div>
+    </div>
+</div>
+<!--/pop: 通用-->

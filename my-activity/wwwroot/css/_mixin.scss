@@ -1,0 +1,37 @@
+/*display-inline*/
+@mixin display-inline {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+/*margin-left-half*/
+@mixin margin-left-half($width) {
+    left: 50%;
+    margin-left: -($width/2);
+}
+/*一行截取*/
+@mixin ellipsis() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*圆角*/
+@mixin border-radius($radius...) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+//transition
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+//opacity
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $o: ($opacity * 100);
+    filter: Alpha(Opacity=$o);
+}

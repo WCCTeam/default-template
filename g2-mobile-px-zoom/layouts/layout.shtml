@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>xxx-首页</title>
+<!--#include virtual="include/_meta.shtml" -->
+<meta name="author" content="{{name}}({{employee}}) | {{time}}">
+</head>
+<body>
+    <!-- zoom -->
+    <script>zoom(750);</script>
+    <h2 class="test">hello world!</h2>
+</body>
+</html>

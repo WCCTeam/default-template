@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/**
+ * 某某站点样式
+ * @author xxx (工号)
+ * @date    yyyy-mm-dd hh:mm:ss
+ * @version $Id$
+ * @editor xxx (工号)
+ **/
+
+@import "base/reset";
+@import "base/base";
+@import "assist/variable";
+@import "assist/mixin";
+@import "assist/idangerous.swiper";
+@import "assist/animate";
+@import "layout/common"; /*模块-公共样式*/
+@import "layout/index"; /*模块-首页样式*/

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>表白季-魔域中文官方网站-my.99.com</title>
+<!--#include virtual="_meta.shtml"-->
+<meta name="viewport" content="minimal-ui,target-densitydpi=device-dpi, width=1280, user-scalable=no"/>
+<meta content="telephone=no" name="format-detection">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- UC默认竖屏 ，UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+<!-- QQ强制竖屏 QQ强制全屏 -->
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-page-mode" content="app">
+<link href="css/ht.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<script>zoom(1280);</script>
+<div class="wrapper">
+    <h1 class="logo" id="logo">
+        <a href="https://my.99.com/index/" title="魔域中文官方网站">
+            <img src="https://img4.99.com/my/images/logo/logo.png" alt="魔域中文官方网站"></a>
+        <script>setLogo();</script>
+    </h1>
+    <h2>表白季</h2>
+</div>
+<script src="https://my.99.com/script/jquery.js"></script>
+<script src="js/function.js"></script>
+<!--统计代码-->
+<div style="display:none">
+    <script>
+        myPublic.addEventTongji();
+        myPublic.addClientTongji();
+    </script>
+</div>
+</body>
+</html>

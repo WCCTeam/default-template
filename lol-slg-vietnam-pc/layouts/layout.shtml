@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="Description"
+    content="'Land of Lords' là trò chơi chiến lược online lấy bối cảnh về ma huyễn phương Tây, chủ yếu thông qua xây dựng thành trì, phát triển quân sự và chính trị, chiêu mộ Anh Hùng, chỉnh đốn đội ngũ, để xây dựng đội ngũ quân đoàn thuộc về chính mình, nâng cao lực chiến đấu bản thân, công thành đoạt đất trên bản đồ thế giới khổng lồ, chiến đấu cùng những game thủ khác." />
+    <meta name="Keywords" content="Lord(s)、Rise、 King(s)、War、Order、slg" />
+    <meta name="author" content="{{name}}({{employee}}) | {{time}}">
+    <title>标题</title>
+    <script src="https://lol.99.com/script/public.js"></script>
+    <link rel="shortcut icon" href="https://images.99.com/lol/image/favicon.ico">
+    <script src="https://lol.99.com/script/public.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="logo">
+        <script>setLogo(false);</script>
+    </h1>
+    <!--stats-code-->
+    <div style="display:none">
+        <script type="text/javascript">tongji();</script>
+    </div>
+    <!--/stats-code-->
+    <script src="https://lol.99.com/script/plugin/jquery/jquery-1.8.3.min.js"></script>
+    <script src="https://lol.99.com/script/plugin/superSlide/jquery.SuperSlide.2.1.1.js"></script>
+</body>
+
+</html>

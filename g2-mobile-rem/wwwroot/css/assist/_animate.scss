@@ -1,0 +1,26 @@
+/* 
+ * animate.css
+ * @author xxx (工号)
+ * @date    yyyy-mm-dd hh:mm:ss
+ * @version $Id$
+ * @editor xxx (工号)
+*/
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  28%{
+  	opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.penAni{
+  -webkit-animation: fadeInRight 1s linear 0s;
+  animation: fadeInRight 1s linear 0s;
+}

@@ -1,0 +1,34 @@
+@import "reset";
+@import "mixin";
+* {
+    zoom: 1.000001;
+    -webkit-transform: translateZ(0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+a {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+body {
+    color: #d7b1bb;
+    font: 28px "Lucida Grande", Helvetica, Arial, Verdana, "Microsoft YaHei", sans-serif;
+    line-height: 1.5;
+}
+.wrapper {
+    position: relative;
+    width: 1280px;
+    height: 610px;
+    overflow: hidden;
+    margin: 0 auto;
+    background: #000;
+}
+.logo {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 97px;
+    img {
+        width: 100%;
+    }
+}
+@import "pop";
