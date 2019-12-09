@@ -6,6 +6,7 @@
 <meta name="renderer" content="webkit">
 <title>表白季-魔域中文官方网站-my.99.com</title>
 <!--#include virtual="_meta.shtml"-->
+<meta name="author" content="{{name}}({{employee}}) | {{time}}">
 <link rel="stylesheet" href="https://my.99.com/script/plugin/swiper/2/idangerous.swiper.css">
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" charset="utf8" src="https://hd.my.99.com/gwdh/view/js/public_top.js"></script>

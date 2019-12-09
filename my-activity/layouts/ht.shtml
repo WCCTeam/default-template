@@ -15,6 +15,7 @@
 <meta name="x5-orientation" content="portrait">
 <meta name="x5-fullscreen" content="true">
 <meta name="x5-page-mode" content="app">
+<meta name="author" content="{{name}}({{employee}}) | {{time}}">
 <link href="css/ht.css" rel="stylesheet" media="screen">
 </head>
 <body>

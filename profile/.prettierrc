@@ -11,6 +11,7 @@
         "TrailingCooma": "all",
         "bracketSpacing": true,
         "jsxBracketSameLine": false,
+        "jsxSingleQuote": true,
         "arrowParens": "always"
       }
     },
@@ -21,31 +22,72 @@
         "tabWidth": 4,
         "useTabs": false,
         "semi": true,
-        "TrailingCooma": "all"
+        "TrailingCooma": "all",
+        "bracketSpacing": true,
+        "arrowParens": "always",
+        "vueIndentScriptAndStyle": true
+      }
+    },
+    {
+      "files": "*.jsx",
+      "options": {
+        "singleQuote": true,
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": true,
+        "TrailingCooma": "all",
+        "bracketSpacing": true,
+        "arrowParens": "always"
       }
     },
     {
       "files": "*.html",
       "options": {
-        "tabWidth": 4
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": true
       }
     },
     {
       "files": "*.shtml",
       "options": {
-        "tabWidth": 4
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": true
       }
     },
     {
       "files": "*.scss",
       "options": {
-        "tabWidth": 4
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": false
+      }
+    },
+    {
+      "files": "*.less",
+      "options": {
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": true
       }
     },
     {
       "files": "*.css",
       "options": {
         "tabWidth": 4,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": false
+      }
+    },
+    {
+      "files": "*.json",
+      "options": {
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": true,
         "singleQuote": false
       }
     }
