@@ -1,3 +1,3 @@
 ---
-layout: ../default-template/yhkd-share/layouts/layout.shtml
+layout: ../default-template/yhkd-share/layouts/index.shtml
 ---
