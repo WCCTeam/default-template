@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <meta name="format-detection" content="telephone=no, email=no"/>
-     <meta name="author" content="{{name}}({{employee}}) | {{time}}">
+    <meta name="author" content="{{name}}({{employee}}) | {{time}}">
     <title>标题</title>
     <script src="https://yhkd.99.com/m/script/public.js"></script>
     <link href="css/style.css" rel="stylesheet">
