@@ -1,3 +1,3 @@
 ---
-layout: ../default-template/my-cms/layouts/client.shtml
+layout: ../default-template/my-activity/layouts/client.shtml
 ---

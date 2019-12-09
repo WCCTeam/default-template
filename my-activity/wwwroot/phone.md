@@ -1,3 +1,3 @@
 ---
-layout: ../default-template/my-cms/layouts/phone.shtml
+layout: ../default-template/my-activity/layouts/phone.shtml
 ---
